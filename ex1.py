@@ -1,27 +1,56 @@
-
-'''1.a'''
-
-L =[5,7,2,9,4,1,3];
+l = [5, 7, 2, 9, 4, 1, 3]
 
 '''1.A'''
-print(len(L));
+cont = 0
+for item in l:
+
+    if item != 0:
+        cont = cont + 1
+
+print('Tamanho da Lista:',cont)
 
 '''1.B'''
+maior = l[0]
+for maiorNumero in l:
+    if maiorNumero > maior:
+        maior = maiorNumero
 
-print(max(L));
+print('Maior valor: ',maior)
 
 '''1.C'''
+menor = l[0]
 
-print(min(L));
+for menorNumero in l:
+    if menorNumero < menor:
+        menor = menorNumero
+
+print('Menor valor: ',menor)
 
 '''1.D'''
+soma = 0
 
-print(sum(L));
+for total in l:
+    soma += total
+
+print('Soma: ',soma)
 
 '''1.E'''
+aux = 1
 
-print(sorted(L));
+for x in range(0,cont):
+    for y in range(0,cont):
+        if l[x]<l[y]:
+            aux = l[x]
+            l[x] = l[y]
+            l[y] = aux
+
+print('Ordem Crescente: ',l)
 
 '''1.F'''
-
-print(sorted(L, reverse=True));
+for x in range(0,cont):
+    for y in range(0,cont):
+        if l[x]>l[y]:
+            aux = l[x]
+            l[x] = l[y]
+            l[y] = aux
+print('Ordem Decresente: ',l)
