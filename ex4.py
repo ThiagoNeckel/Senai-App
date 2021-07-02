@@ -1,12 +1,7 @@
 
-
-
-
-
-
 def linha (n):
-    for i in range(n):
-        print(end='_');
+    return print('_'*n)
+
 
 n = int(input('Digite tamanho da linha: '))
 
