@@ -37,8 +37,6 @@ else:
         elif (valor >= 2):
             print("{} Dois reais".format(int(valor / 2)))
             valor = round(valor % 2, 2)
-        else:
-            continue
 
     print('--------MOEDAS---------')
 
