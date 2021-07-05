@@ -8,8 +8,7 @@ except ValueError:
 else:
     valor = (dinheiro - valorCompra)
 
-    print('Notas a serem entregue para troco de''\033[33m' + ' $' + '\033[0;0m' + '\033[32m {:.2f} \033[0;0m'.format(
-        valor))
+    print('Notas a serem entregue para troco de''\033[33m' + ' $' + '\033[0;0m' + '\033[32m {:.2f} \033[0;0m'.format(valor))
     print('\033[36m')
 
     print('--------NOTAS----------')
